@@ -1,0 +1,25 @@
+body{
+  background-color: rgb(131, 120, 120);
+  display: flex;
+  justify-content: center;
+}
+.container{
+  background-color: rgb(27, 25, 25);
+  border-radius: 5px;
+  
+}
+input{
+  width: 97%;
+  height: 50px;
+  background-color: 3px;
+}
+button{
+  width: 50px;
+  height: 40px;
+  background-color: rgb(186, 185, 185);
+  color: white;
+  border-radius: 3px;
+}
+#btn{
+  background-color: blanchedalmond;
+}

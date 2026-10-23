@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="00_style.css">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <main class="login_page">
+
+        <form class="login_form" action="#" method="post">
+
+            <!-- Shopping cart icon -->
+            <svg class="shopping" viewBox="0 0 100 85"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none" stroke="currentColor"
+                 stroke-width="3" stroke-linecap="round"
+                 stroke-linejoin="round"
+                 aria-label="Shopping cart" role="img">
+
+                <path d="M5 8 H17 Q20 8 22 13 L36 62 Q37 66 42 66 H72 Q76 66 78 62 L88 35 H78"/>
+
+                <path d="M58 25 L68 15 L78 25 M68 15 V48"/>
+
+                <circle cx="47" cy="77" r="4"/>
+                <circle cx="70" cy="77" r="4"/>
+            </svg>
+
+            <!-- Username -->
+            <div class="username">
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="USERNAME"
+                    aria-label="Username"
+                    autocomplete="username"
+                    required>
+
+                <i class="fa-regular fa-circle-user"></i>
+            </div>
+
+            <!-- Password -->
+            <div class="password">
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="PASSWORD"
+                    aria-label="Password"
+                    autocomplete="current-password"
+                    required>
+
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <!-- Login button -->
+            <button type="submit" class="btn">LOGIN</button>
+
+            <!-- Forgot password -->
+            <p><a href="#">Forgot password?</a></p>
+
+        </form>
+
+    </main>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</body>
+</html>

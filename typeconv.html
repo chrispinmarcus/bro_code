@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information Form</title>
+
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 550px;
+      margin: 30px auto;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-group > label {
+      width: 170px;
+      flex-shrink: 0;
+    }
+
+    input:not([type="radio"]),
+    textarea {
+      flex: 1;
+      min-width: 0;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 70px;
+    }
+
+    .gender {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">Collecting User Input</h1>
+
+  <form>
+    <div class="form-group">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="firstName"
+             placeholder="Enter your first name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lastName"
+             placeholder="Enter your last name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="father">Father's Full Name:</label>
+      <input type="text" id="father" name="fatherName"
+             placeholder="Enter your father's name">
+    </div>
+
+    <div class="form-group">
+      <label for="mother">Mother's Full Name:</label>
+      <input type="text" id="mother" name="motherName"
+             placeholder="Enter your mother's name">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age"
+             min="1" max="120" required>
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="gender">
+        <input type="radio" name="gender" id="male"
+               value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female"
+               value="Female">
+        <label for="female">Female</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dateOfBirth">
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address"
+                placeholder="Enter your address"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Additional Information:</label>
+      <textarea id="message" name="message"
+                placeholder="Write additional information here"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
